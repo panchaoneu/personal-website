@@ -1,0 +1,108 @@
+main {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+p {
+  color: #666;
+  line-height: 1.5em;
+}
+
+.container {
+  width: 75%;
+}
+
+.title {
+  text-align: center;
+}
+
+.email-buttons {
+  font-size: 1.2em;
+  border: none;
+  padding: 2px 6px 2px 6px;
+}
+
+.fa-facebook {
+  color: #4267b2;
+}
+
+.fa-linkedin {
+  color: #2867b2;
+}
+
+.fa-github {
+  color: #171515;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.toast-parent-div {
+  z-index: 11;
+}
+
+#footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#horizontal-contact-list {
+  justify-content: center;
+  list-style: none;
+  font-size: 2em;
+}
+
+#horizontal-contact-list li {
+  background: none;
+  border: none;
+}
+
+#vertical-contact-list {
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+#toast-success-icon {
+  color: green;
+  margin-right: 0.5em;
+}
+
+#toast-failure-icon {
+  color: red;
+  margin-right: 0.5em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 75%;
+  }
+}

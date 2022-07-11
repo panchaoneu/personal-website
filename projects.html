@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Chao Pan" />
+    <meta name="description" content="Chao Pan Home Page" />
+    <link rel="shortcut icon" href="./public/icons/favicon.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/projects.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/aa892a9d47.js" crossorigin="anonymous"></script>
+    <title>Chao Pan's Home Page</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <div class="navbar-brand">Chao Pan</div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <!-- Projects -->
+        <section>
+          <h1 class="title">Projects</h1>
+
+          <ul id="project-list" class="list-group">
+            <li class="list-group-item">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">Twitch+: A Personalized Twitch Resources Recommendation Engine</h2>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Designed and built a full-stack web application for users to search twitch resources (stream/video/clip) and get recommendations
+                  </p>
+                  <p class="card-text">
+                    Built a web page with rich + user friendly experience using React and Ant Design
+                  </p>
+                  <p class="card-text">
+                    Implemented RESTful APIs using Java servlets, retrieved real Twitch resources using Twitch API and stored data in MySQL
+                  </p>
+                  <p class="card-text">
+                    Support login/logout and favorite collection
+                  </p>
+                  <p class="card-text">
+                    Explored multiple recommendation algorithms and extracted game information from Twitch resources to implement a Content-based algorithm
+                  </p>
+                  <p class="card-text">
+                    Deployed to AWS EC2 for more visibility
+                  </p>
+<!--                  <div>-->
+<!--                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">-->
+<!--                      Project Code-->
+<!--                    </a>-->
+<!--                  </div>-->
+                </div>
+                <div class="card-footer">
+                  <div class="mb-2">Tech Stack:</div>
+                  <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                      <div class="tag tag-js rounded">React JS</div>
+                    </div>
+<!--                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">-->
+<!--                      <div class="tag tag-node rounded">Node.Js</div>-->
+<!--                    </div>-->
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                      <div class="tag tag-no-color rounded">Ant Design</div>
+                    </div>
+<!--                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">-->
+<!--                      <div class="tag tag-no-color rounded">EJS</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">-->
+<!--                      <div class="tag tag-mongodb rounded">MongoDB</div>-->
+<!--                    </div>-->
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                      <div class="tag tag-gcp rounded">MySQL</div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                      <div class="tag tag-heroku rounded">AWS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">Staybooking: An online stay rental application based on React and Spring Boot</h2>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Designed and built a single page web application using React. Bootstrap the development with mature component library AntD
+                  </p>
+                  <p class="card-text">
+                    Implemented the backend services based on Spring Boot to support stay upload, delete, search and reserve functionality
+                  </p>
+                  <p class="card-text">
+                    Used MySQL to store user-generated data, e.g. stay information and reservation history, and utilized Google Cloud Storage to store media files for the uploaded stays
+                  </p>
+                  <p class="card-text">
+                    Created geo index by Elasticsearch to support geo-based stay search based on user’s selected locations
+                  </p>
+                  <p class="card-text">
+                    Implemented token-based server side user authentication based on the Spring Security framework
+                  </p>
+                  <p class="card-text">
+                    Deployed the backend service to Google App Engine for better scalability and reliability
+                  </p>
+
+                <div class="card-footer">
+                  <div class="mb-2">Tech Stack:</div>
+                  <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                      <div class="tag tag-js rounded">React JS</div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                      <div class="tag tag-no-color rounded">Ant Design</div>
+                    </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                                          <div class="tag tag-no-color rounded">Spring Boot</div>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                                          <div class="tag tag-mongodb rounded">Spring</div>
+                                        </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                      <div class="tag tag-gcp rounded">MySQL</div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">
+                      <div class="tag tag-heroku rounded">Google Cloud</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">Tinnews: a Tinder-like News App</h2>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Designed the Instagram Flavor News app based on Google Component Architectural MVVM Pattern
+                  </p>
+                  <p class="card-text">
+                    Implemented the bottom bar & page navigation using JetPack navigation component
+                  </p>
+                  <p class="card-text">
+                    Utilized 3rd party CardStackView(RecyclerView) to support swipe gestures for liking/disliking the news
+                  </p>
+                  <p class="card-text">
+                    Built the Room Database with LiveData & ViewModel to support local cache and offline model
+                  </p>
+                  <p class="card-text">
+                    Integrated Retrofit and LiveData to pull the latest news data from a RESTFUL endpoint (newsapi.org)
+                  </p>
+                </div>
+                <div class="card-footer">
+<!--                  <div class="mb-2">Tech Stack:</div>-->
+                  <div class="row">
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">Starlink: React JS based Starlink Trajectory Visualization</h2>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Designed and developed a visualization dashboard using ReactJS and D3 to track satellites in real-time based on geo-location
+                  </p>
+                  <p class="card-text">
+                    Built location, altitude and duration based selector to refine satellite search
+                  </p>
+                  <p class="card-text">
+                    Animated selected satellite paths on a world map using D3 to improve the user friendliness
+                  </p>
+                  <p class="card-text">
+                    Deployed the dashboard to Amazon Web Service for demonstration
+                  </p>
+                </div>
+                <div class="card-footer">
+<!--                  <div class="mb-2">Tech Stack:</div>-->
+<!--                  <div class="row">-->
+<!--                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">-->
+<!--                      <div class="tag tag-js rounded">React JS</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">-->
+<!--                      <div class="tag tag-no-color rounded">Ant Design</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">-->
+<!--                      <div class="tag tag-no-color rounded">Spring Boot</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">-->
+<!--                      <div class="tag tag-mongodb rounded">Spring</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">-->
+<!--                      <div class="tag tag-gcp rounded">MySQL</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 g-2">-->
+<!--                      <div class="tag tag-heroku rounded">AWS</div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div id="footer">
+        <div>Chao Pan © 2022</div>
+        <ul id="horizontal-contact-list" class="list-group list-group-horizontal">
+          <li class="list-group-item">
+            <a
+                    href="https://www.linkedin.com/in/chao-pan-67555a57/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://github.com/panchaoneu" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.facebook.com/chao.pan.334/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        </ul>
+        <ul id="vertical-contact-list">
+          <li><i class="fas fa-phone-alt"></i> (314) 608-8987</li>
+          <li>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:chaopan6649@gmail.com">chaopan6649@gmail.com</a>
+            <button id="copy-email" type="button" class="btn btn-outline-primary email-buttons">
+              <i class="far fa-copy"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Toasts -->
+      <div class="position-fixed bottom-0 start-0 p-3 toast-parent-div">
+        <div id="toast-success" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <i id="toast-success-icon" class="fas fa-check-circle"></i>
+            Success
+          </div>
+          <div class="toast-body">Copied to clipboard.</div>
+        </div>
+      </div>
+
+      <div class="position-fixed bottom-0 start-0 p-3 toast-parent-div">
+        <div id="toast-failure" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <i id="toast-failure-icon" class="fas fa-times-circle"></i>
+            Failed
+          </div>
+          <div id="error-message" class="toast-body">Failed to copy to clipboard.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./public/scripts/main.js"></script>
+  </body>
+</html>

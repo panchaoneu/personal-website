@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Chao Pan" />
+    <meta name="description" content="Chao Pan Home Page" />
+    <link rel="shortcut icon" href="./public/icons/favicon.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/index.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/aa892a9d47.js" crossorigin="anonymous"></script>
+    <title>Chao Pan's Home Page</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <div class="navbar-brand">Chao Pan</div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <!-- Greeting -->
+        <section>
+          <div id="landing-page">
+            <img
+              id="profile-picture"
+              src="https://i.postimg.cc/T3jcXHWK/Capture.jpg"
+              alt="profile picture"
+            />
+            <h1 class="title">Hi, I am Chao Pan</h1>
+            <div id="alias" class="mb-2">aka Sherry Pan</div>
+            <div>MSCS Northeastern University | PhD Washington University in St. Louis</div>
+            <div id="info-summary">
+              <ul id="vertical-contact-list">
+                <li>
+                  <a
+                    href ="./public/images/ChaoPan-resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Resume <i class="fas fa-external-link-alt"></i
+                  ></a>
+                </li>
+                <li><i class="fas fa-phone-alt"></i> (314) 608-8987</li>
+                <li>
+                  <i class="far fa-envelope"></i>
+                  <a href="mailto:chaopan6649@gmail.com">chaopan6649@gmail.com</a>
+                  <button id="copy-email" type="button" class="btn btn-outline-primary email-buttons">
+                    <i class="far fa-copy"></i>
+                  </button>
+                </li>
+              </ul>
+              <ul id="horizontal-contact-list" class="list-group list-group-horizontal">
+                <li class="list-group-item">
+                  <a
+                    href="https://www.linkedin.com/in/chao-pan-67555a57/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="https://github.com/panchaoneu" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="https://www.facebook.com/chao.pan.334/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div id="footer">
+        <div>Chao Pan © 2022</div>
+      </div>
+
+      <!-- Toasts -->
+      <div class="position-fixed bottom-0 start-0 p-3 toast-parent-div">
+        <div id="toast-success" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <i id="toast-success-icon" class="fas fa-check-circle"></i>
+            Success
+          </div>
+          <div class="toast-body">Copied to clipboard.</div>
+        </div>
+      </div>
+
+      <div class="position-fixed bottom-0 start-0 p-3 toast-parent-div">
+        <div id="toast-failure" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <i id="toast-failure-icon" class="fas fa-times-circle"></i>
+            Failed
+          </div>
+          <div id="error-message" class="toast-body">Failed to copy to clipboard.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./public/scripts/main.js"></script>
+  </body>
+</html>
